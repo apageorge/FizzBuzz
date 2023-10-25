@@ -15,24 +15,32 @@ class FizzBuzzTest {
     void tearDown() {
     }
 
-    @Test
-    void playFizzBuzzNumber() {
-        FizzBuzz fizz = new FizzBuzz();
-        assertEquals(fizz.playFizzBuzz(1),"1");
-    }
+
     @Test
     void playFizzBuzzDivByThree() {
         FizzBuzz fizz = new FizzBuzz();
-        assertEquals(fizz.playFizzBuzz(6),"Fizz");
+        String expectedResult = "Fizz";
+        String actualResult = fizz.playFizzBuzz(6);
+        assertEquals(actualResult,expectedResult);
     }
     @Test
     void playFizzBuzzDivByFive() {
         FizzBuzz fizz = new FizzBuzz();
-        assertEquals(fizz.playFizzBuzz(10),"Buzz");
+        String expectedResult = "Buzz";
+        String actualResult = fizz.playFizzBuzz(10);
+        assertEquals(actualResult,expectedResult);
     }
     @Test
     void playFizzBuzzDivByThreeAndFive() {
         FizzBuzz fizz = new FizzBuzz();
-        assertEquals(fizz.playFizzBuzz(15),"FizzBuzz");
+        String expectedResult = "FizzBuzz";
+        String actualResult = fizz.playFizzBuzz(15);
+        assertEquals(actualResult,expectedResult);
     }
+    @Test
+    void playFizzBuzzNumber() {
+        FizzBuzz fizz = new FizzBuzz();
+        String expectedResult = "1";
+        String actualResult = fizz.playFizzBuzz(1);
+        assertEquals(actualResult,expectedResult);    }
 }

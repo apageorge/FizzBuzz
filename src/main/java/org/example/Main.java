@@ -9,11 +9,12 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        String result;
+        String result ="";
         FizzBuzz fizz = new FizzBuzz();
         for (int i = 1; i <= num; i++) {
-            result = fizz.playFizzBuzz(i);
-            System.out.println(result);
+            result = result + " " +fizz.playFizzBuzz(i);
+
         }
+        System.out.println(result);
     }
 }
